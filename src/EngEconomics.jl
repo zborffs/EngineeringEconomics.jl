@@ -121,4 +121,9 @@ function presentWorthConversionFactorGeometric(g, i, N)
 	(((1 + i0)^N - 1) / (i0 * (1+i0)^N)) * 1 / (1 + g)
 end
 
+export paybackPeriod
+function paybackPeriod(firstCost, annualSavings)
+	return firstCost / annualSavings
+end
+
 end
